@@ -36,8 +36,21 @@
  <input type="text" id="job-description" maxlength="500" required="required">
  <label for="date">Data de inicio:</label>
  <input type="date" id="date" required="required">
-
-
 </fieldset>
+<button id="stop">Cancelar</button>
+<button type="submit">Enviar</button>
+<div></div>
+<button>Limpar</button>
+<div></div>
+
+
+<script>
+
+function stopDefaction (evt){
+    evt.preventDefault();
+}
+document.getElementById("stop"). addEventListener ("click", stopDefaction,false);
+
+</script>   
 </body>
 </html> 
