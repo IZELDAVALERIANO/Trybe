@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html>
-​
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8" />
-    <title>Exercício 01 Aula 6.1 - HTML & CSS - Forms</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios formulários</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-​
 <body>
-    <fieldset>
-        <label for="name">Nome:</label>
-        <input required="required" id="name" type="text" maxlength="40">
-        <label for="">Digite seu email:</label>
-        <input type="email" placeholder="example@example.com" required="required" maxlegngth="50"> <br>
-        
-        <label for="cpf">CPF</label>
-        <input  required="required" id="cpf" type="number" maxlength="11" placeholder="xxx.xxx.xxx-xx"> <br>
-        
-        <label for="address">Endereço:</label>
-        <input  required="required" id="address" type="text" maxlength="200"> <br>
-       
-       <label for="city">Cidade:</label>
-        <input  required="required" id="city" type="text" maxlength="28">
-        
-        <label for="state">Estado:</label>
-        <select  required="required" id="state" type="combox" maxlength="200"></select>
-        
-        <label for="home">Tipo de moradia:</label>
-        <input  required="required" id="home" type="radio">Casa 
-        <input  required="required" id="Apart" type="radio">Apartamento
-        
-    </fieldset>
-    <script type="text/javascript" href="script.js"></script>
+<fieldset>
+    <label for="name">Nome completo:</label>
+    <input type="text" id="name" maxlength="40" required="required">
+    <label for="e-mail">Qual seu e-mail?</label>
+    <input id="e-mail" maxlength="50" required="required">
+    <label for="cpf">Informe seu cpf:</label>
+    <input type="text" id="cpf" maxlength="11" required="required">
+    <label for="adress"> Informe seu indereço:</label>
+    <input type="text" id="adress" maxlength="200">
+    <label for="city">Cidade:</label>
+    <input type="text" id="city" maxlength="28">
+    <label for="state">Estado</label>
+    <input type="comboBox" id="state" required="required">
+    <option></option>
+    <label for="house">Casa</label>
+    <input type="radio" id="house">
+    <label for="apartment"> Apartamento</label>
+    <input type="radio" id="apartment">
+</fieldset>
 </body>
-​
-</html>
+</html> 
