@@ -1,0 +1,47 @@
+
+<div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+      document.querySelector('#elementoOndeVoceEsta').parentNode.style.color = 'blue';
+      document.querySelector('#primeiroFilho').innertext = "Texto qualquer";
+      document.querySelector('#pai').firstChild;
+      document.querySelector('#elementoOndeVoceEsta').previousSibling;
+      //document.querySelector('#elementOndeVoceEsta').nextElementSibling;
+      document.querySelector('#elementoOndeVoceEsta').lastChild;
+      document.querySelector('#pai').lastChild;
+
+      let resgateElemento = document.querySelector('#elementoOndeVoceEsta');
+      let filho = document.createElement('div'); 
+      filho.innerText = "testando elemento";
+      resgateElemento.appendChild(filho);
+
+      let maisUmFilho = document.getElementById('primeiroFilhoDoFilho');
+      let FilhoDoFilho = document.createElement('p');
+      FilhoDoFilho.innerText = "filho do filho do filho";
+      maisUmFilho.appendChild(FilhoDoFilho);
+
+      let elementoOndeestou = document.getElementById('elemementoOndeVoceEsta');
+      let filhoOndeEstou = document.createElement('h2');
+      elementoOndeestou.appendChild(filhoOndeEstou);
+
+
+
+      
+
+      
+
+
+
+  </script>
+
+ 
